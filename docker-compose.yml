@@ -1,0 +1,53 @@
+# version: "3"
+
+# networks:
+#   djangonetwork:
+#     driver: bridge
+
+# services:
+
+#   db:
+#     image: postgres
+#     container_name: db
+#     volumes:
+#       - ./backup_data/db:/var/lib/postgresql/data
+#     environment:
+#       - PGUSER=postgres
+#       - PGPASSWORD=postgres
+#       - PGDATABASE=postgres
+#       - POSTGRES_DB=postgres
+#       - POSTGRES_USER=root
+#       - POSTGRES_PASSWORD=root
+#     networks:
+#       - djangonetwork
+
+#   backend:
+#     build: ./server
+#     volumes:
+#       - ./server:/app
+#     depends_on:
+#       - db
+#     networks:
+#       - djangonetwork
+#     links:
+#       - db:db
+#     environment:
+#       - POSTGRES_NAME=postgres
+#       - POSTGRES_USER=postgres
+#       - POSTGRES_PASSWORD=postgres
+  
+#   frontend:
+#     build: ./client
+#     volumes:
+#       - ./client:/app
+#     depends_on:
+#       - backend
+#     ports:
+#       - 80:80
+  
+#   nginx_backend_server:
+#     build: ./nginx
+#     ports:
+#       - 8000:8000
+#     depends_on:
+#       - backend

@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  nginx: 
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: ./docker/nginx/Dockerfile
+    ports:
+      - 80:80
+    volumes:
+      - static_volume:/app/api/django_static
+      - ./docker/nginx/development:/etc/nginx/conf.d
+    depends_on:
+      - server
+
+  server:
+    restart: unless-stopped
+    build:
+        context: .
+        dockerfile: ./docker/server/Dockerfile
+    entrypoint: /app/docker/server/wsgi-entrypoint.sh
+    volumes:
+      - static_volume:/app/server/django_static
+    expose:
+      - 8000
+
+volumes:
+  static_volume: {}
