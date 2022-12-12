@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-rd*3n4c8st%af=rqg(i%jd%ff)l8s!j9l8hnj%$wxsr0i8z+xm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', 'ThreeIngredients.com', 'www.ThreeIngredients.com']
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', 'ThreeIngredients.com', 'www.ThreeIngredients.com']
 
 
 # Application definition
@@ -39,11 +39,33 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
+    'recipes',
 ]
 
-CORS_ORIGIN_WHITELIST = [
-     'http://localhost:3000'
+# ALLOWED_HOSTS = ['*']
+
+# CORS_ALLOW_ALL_ORIGINS = True
+
+# CORS_ORIGIN_WHITELIST = [
+#     # 'http://localhost:3000'
+#     'http://localhost:3000',
+#     'http://0.0.0.0:3000',
+#     'http://0.0.0.0:80',
+#     'http://localhost',
+#     'http://localhost:80',
+# ]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8080",
+    "http://localhost:80",
+    "http://localhost",
+    "http://localhost:3000",
+    "http://0.0.0.0:8080",
+    "http://0.0.0.0:80",
+    "http://0.0.0.0",
+    "http://0.0.0.0:3000",
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -79,7 +101,6 @@ WSGI_APPLICATION = 'api.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
 
 
 DATABASES = {
@@ -137,7 +158,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 MEDIA_URL = '/media/'
-STATIC_URL = '/django_static/' 
+STATIC_URL = '/django_static/'
 STATIC_ROOT = BASE_DIR / 'django_static'
 
 

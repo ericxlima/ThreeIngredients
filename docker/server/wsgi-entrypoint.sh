@@ -13,7 +13,7 @@ done
 
 ./manage.py collectstatic --noinput
 
-gunicorn api.wsgi --bind 0.0.0.0:8000 --workers 4 --threads 4
+# gunicorn api.wsgi --bind 0.0.0.0:8000 --workers 4 --threads 4
 
 #####################################################################################
 # Options to DEBUG Django server
@@ -25,4 +25,4 @@ gunicorn api.wsgi --bind 0.0.0.0:8000 --workers 4 --threads 4
 
 # Option 2:
 # run development server
-# DEBUG=True ./manage.py runserver 0.0.0.0:8000
+DEBUG=True ./manage.py runserver 0.0.0.0:8000
