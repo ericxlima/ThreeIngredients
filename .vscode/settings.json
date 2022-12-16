@@ -22,6 +22,11 @@
         "source.organizeImports": true
       }
     },
+    "[javascript]": {
+      "editor.maxTokenizationLineLength": 2500,
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
     "[html]": {
       "editor.formatOnSave": true,
       "editor.defaultFormatter": "vscode.html-language-features",
