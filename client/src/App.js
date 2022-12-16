@@ -1,34 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-import axios from 'axios';
+import { Outlet } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Sidebar from "./components/Sidebar";
+import { Main } from "./styles";
 
-if (window.location.origin === "http://localhost:3000") {
-  axios.defaults.baseURL = "http://127.0.0.1:8000";
-} else {
-  axios.defaults.baseURL = window.location.origin;
-}
-
-function App() {
-
-
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Sidebar />
+      <Main>
+        <Outlet />
+      </Main>
     </div>
   );
 }
-
-export default App;
