@@ -7,6 +7,9 @@ import SearchIcon from "@mui/icons-material/Search";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import CalendarMonth from "@mui/icons-material/CalendarMonth";
 import Layers from "@mui/icons-material/Layers";
+import WatchLater from "@mui/icons-material/WatchLater";
+import LocalPizza from "@mui/icons-material/LocalPizza";
+import Visibility from "@mui/icons-material/Visibility";
 
 const Home = () => {
   return (
@@ -74,6 +77,28 @@ const Home = () => {
                 ducimus itaque! Dolorum delectus illum dignissimos.
               </p>
             </div>
+            <div className="recipe-meta-container">
+              <div className="recipe-meta recipe-preparation">
+                <h3 className="recipe-meta-title">
+                  <WatchLater />
+                  Preparo
+                </h3>
+                <div className="recipe-meta-text">10 Minutos</div>
+              </div>
+              <div className="recipe-meta recipe-servings">
+                <h3 className="recipe-meta-title">
+                  <LocalPizza />
+                  Porções
+                </h3>
+                <div className="recipe-meta-text">4 Porções</div>
+              </div>
+            </div>
+            <footer className="recipe-footer">
+              <a href="/recipes/1/" className="recipe-read-more">
+                <Visibility />
+                <span>Ver Receita</span>
+              </a>
+            </footer>
           </div>
         </div>
       </div>
