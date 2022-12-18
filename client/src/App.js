@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Sidebar from "./components/Sidebar";
 import { Main } from "./styles";
 

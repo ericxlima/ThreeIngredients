@@ -2,6 +2,11 @@ import styled from "styled-components";
 import Theme from "./theme";
 
 export const Main = styled.div`
+  * {
+    font-family: ${Theme.fontStyle.font_primary};
+    font-feature-settings: "pnum" on, "lnum" on;
+  }
+
   h1,
   h2,
   h3,
@@ -9,10 +14,5 @@ export const Main = styled.div`
   h5,
   h6 {
     font-family: ${Theme.fontStyle.font_headings};
-  }
-
-  body {
-    font-size: 1.6rem;
-    font-family: ${Theme.fontStyle.font_primary};
   }
 `;
