@@ -62,7 +62,7 @@ const RecipeListItem = () => {
           </div>
         </div>
         <footer className="recipe-footer">
-          <a href="/recipes/1/" className="recipe-read-more">
+          <a href="/recipe/1/" className="recipe-read-more">
             <Visibility />
             <span>Ver Receita</span>
           </a>
