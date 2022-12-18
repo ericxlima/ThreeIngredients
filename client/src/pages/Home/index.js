@@ -1,11 +1,19 @@
 import React from "react";
+import { HomeContainer } from "./styles";
+import CoffeeIcon from "@mui/icons-material/Coffee";
 
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
-      <p>AAAA</p>
-    </div>
+    <HomeContainer>
+      <header class="main-header-container">
+        <div className="main-header">
+          <a class="main-logo" href="/">
+            <CoffeeIcon sx={{ fontSize: 40 }} />
+            <span class="main-logo-text">Three Ingredients</span>
+          </a>
+        </div>
+      </header>
+    </HomeContainer>
   );
 };
 

@@ -15,21 +15,26 @@
     rel="stylesheet" />
 
   <style>
-    body {
-      padding-right: 0 !important;
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
     }
 
-    body * {
-      font-family: 'Raleway', sans-serif !important;
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      font-size: 1.6rem;
+      font-family: Arial, Helvetica, sans-serif;
       font-feature-settings: 'pnum' on, 'lnum' on;
     }
   </style>
 </head>
 
 <body class="app-modal">
-  <div id="root">
-    <h1>ola</h1>
-  </div>
+  <div id="root"></div>
   <script type="module" src="../src/index.js"></script>
 </body>
 <script>
