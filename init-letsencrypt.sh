@@ -5,7 +5,7 @@ if ! [ -x "$(command -v docker compose)" ]; then
   exit 1
 fi
 
-domains=(ThreeIngredients.com www.ThreeIngredients.com)
+domains=(lovecoffee.com www.lovecoffee.com)
 rsa_key_size=4096
 data_path="./docker/nginx/certbot"
 email="eric.vinlima@gmail.com" 

@@ -9,7 +9,7 @@ const Home = () => {
         <div className="main-header">
           <a class="main-logo" href="/">
             <CoffeeIcon sx={{ fontSize: 40 }} />
-            <span class="main-logo-text">Three Ingredients</span>
+            <span class="main-logo-text">Love Coffee</span>
           </a>
         </div>
       </header>

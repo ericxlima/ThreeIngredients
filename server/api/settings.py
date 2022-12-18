@@ -6,7 +6,7 @@ SECRET_KEY = 'django-insecure-rd*3n4c8st%af=rqg(i%jd%ff)l8s!j9l8hnj%$wxsr0i8z+xm
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'ThreeIngredients.com', 'www.ThreeIngredients.com']
+ALLOWED_HOSTS = ['localhost', 'lovecoffee.com', 'www.lovecoffee.com']
 
 
 INSTALLED_APPS = [
