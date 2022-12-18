@@ -61,12 +61,12 @@ const RecipeDetail = () => {
             <div className="recipe-meta-text">4 Porções</div>
           </div>
         </div>
-        <footer className="recipe-footer">
+        {/* <footer className="recipe-footer">
           <a href="/recipe/1/" className="recipe-read-more">
             <Visibility />
             <span>Ver Receita</span>
           </a>
-        </footer>
+        </footer> */}
       </div>
     </RecipeDetailContainer>
   );

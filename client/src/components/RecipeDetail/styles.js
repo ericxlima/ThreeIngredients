@@ -16,12 +16,13 @@ export const RecipeDetailContainer = styled.div`
   }
 
   .recipe-list-item {
-    max-width: 64rem;
+    max-width: 84rem;
+    margin: 0 auto;
   }
 
   .recipe-list-item:hover {
-    transform: scale(1.03);
-    box-shadow: ${Theme.shadow.shadow1};
+    transform: scale(1);
+    box-shadow: ${Theme.shadow.shadow0};
   }
 
   .recipe-tittle-container {
