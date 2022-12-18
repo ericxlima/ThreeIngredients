@@ -33,12 +33,13 @@ const Theme = {
     gray_9: "#191919",
   },
   fontSize: {
-    font8px: "0.5rem",
-    font12px: "0.75rem",
-    font16px: "1rem",
-    font20px: "1.25rem",
-    font24px: "1.5rem",
-    font14px: "0.875rem",
+    font8px: "0.8rem",
+    font12px: "1.2rem",
+    font14px: "1.4rem",
+    font16px: "1.6rem",
+    font20px: "2rem",
+    font24px: "2.4rem",
+    font28px: "2.8rem",
   },
   fontStyle: {
     font_primary: "sans-serif",
@@ -48,6 +49,10 @@ const Theme = {
     medium: "3rem",
     large: "4rem",
     small: "2rem",
+  },
+  shadow: {
+    shadow0: "-5px 5px 15px rgba(0, 0, 0, 0.2)",
+    shadow1: "-10px 10px 20px rgba(0, 0, 0, 0.4)",
   },
 };
 
