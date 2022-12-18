@@ -102,6 +102,39 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <footer class="main-footer">
+        <div class="developer">
+          <a
+            href="https://github.com/ericxlima"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            By Eric de Lima
+          </a>
+        </div>
+
+        <div class="powered">
+          <span>
+            Powered by
+            <a
+              href="https://www.djangoproject.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Django
+            </a>
+            and
+            <a
+              href="https://reactjs.org/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              React
+            </a>
+          </span>
+        </div>
+      </footer>
     </HomeContainer>
   );
 };
