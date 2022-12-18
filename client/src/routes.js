@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import App from "./App";
 
-import { Home, Login, Register } from "./pages";
+import { Home, Login, Register, Recipe } from "./pages";
 
 // import {
 //   ProtectedRoute,
@@ -18,6 +18,7 @@ const UrlRoutes = () => {
       <Routes>
         <Route path="/" element={<App />}>
           <Route path="" element={<Home />} />
+          <Route path="recipe/:id" element={<Recipe />} />
           <Route path="login" element={<Login />} />
           <Route path="cadastro" element={<Register />} />
         </Route>
