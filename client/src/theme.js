@@ -31,6 +31,18 @@ const Theme = {
     gray_7: "#4b4b4b",
     gray_8: "#323232",
     gray_9: "#191919",
+
+    // New colors
+    red: "#BC442F",
+    pink: "#EC6056",
+    yellow: "#FFC978",
+    blue: "#007B7D",
+    dark_blue: "#201230",
+    purple: "#3d235c",
+    light_purple: "#5A3489",
+    baby_purple: "#E3D1FA",
+    cyan: "#54DEDC",
+    baby_cyan: "#A8F0F0",
   },
   fontSize: {
     font8px: "0.8rem",
@@ -44,6 +56,10 @@ const Theme = {
   fontStyle: {
     font_primary: "sans-serif",
     font_headings: " 'Roboto Slab', serif",
+
+    // New fonts
+    font_primary_2: "'freight-sans-pro', sans-serif",
+    font_headings_2: "'ff-meta-serif-web-pro', serif",
   },
   spacingGutter: {
     medium: "3rem",

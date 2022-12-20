@@ -18,6 +18,7 @@ export const RecipeDetailContainer = styled.div`
   .recipe-list-item {
     max-width: 84rem;
     margin: 0 auto;
+    height: fit-content;
   }
 
   .recipe-list-item:hover {
@@ -71,17 +72,7 @@ export const RecipeDetailContainer = styled.div`
     font-size: ${Theme.fontSize.font16px};
   }
 
-  .recipe-footer a {
-    background-color: ${Theme.color.primary_dark};
-    display: block;
-    color: ${Theme.color.white};
-    text-decoration: none;
-    text-align: center;
+  .preparation-steps {
     padding: ${Theme.spacingGutter.small};
-    transition: all 0.3s ease-in-out;
-  }
-
-  .recipe-footer a:hover {
-    filter: brightness(2);
   }
 `;

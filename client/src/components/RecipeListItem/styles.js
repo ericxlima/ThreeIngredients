@@ -28,6 +28,11 @@ export const RecipeListItemContainer = styled.div`
     padding: ${Theme.spacingGutter.small};
   }
 
+  .recipe-tittle-container a {
+    text-decoration: none;
+    color: ${Theme.color.primary_dark};
+  }
+
   .recipe-author {
     padding: 0 ${Theme.spacingGutter.small};
   }

@@ -18,7 +18,7 @@ const RecipeListItem = () => {
         </div>
         <div className="recipe-tittle-container">
           <h2 className="recipe-tittle">
-            Lorem ipsum dolor sit amet consectetur.
+            <a href="/recipe/1/">Lorem ipsum dolor sit amet consectetur.</a>
           </h2>
         </div>
         <div className="recipe-author">
